@@ -89,6 +89,10 @@ module.exports = {
     userInfo.restaurant[req.params.id][req.params.key] = req.body[req.params.key];
     res.status(200).json({ restaurant: userInfo.restaurant });
   },
+  changeSkillz: function(req, res, next) {
+    skillz.skills[req.params.id][req.params.key] = req.body[req.params.key];
+    res.status(200).json({ restaurant: userInfo.restaurant });
+  },
   addHobby: function(req, res, next) {
     userInfo.hobbies.push(req.body.hobby);
     res.status(200).json({ hobbies: userInfo.hobbies });

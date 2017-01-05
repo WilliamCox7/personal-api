@@ -28,6 +28,7 @@ app.put('/name', mainCtrl.changeName);
 app.put('/location', mainCtrl.changeLocation);
 app.put('/family/:id/:key', mainCtrl.changeFamily);
 app.put('/restaurant/:id/:key', mainCtrl.changeRestaurant);
+app.put('/skillz/:id/:key', mainCtrl.changeSkillz);
 
 app.post('/hobbies', mainCtrl.addHobby);
 app.post('/occupations', mainCtrl.addOccupation);

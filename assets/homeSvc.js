@@ -35,4 +35,11 @@ angular.module('app').service('homeSvc',function($http) {
       url: '/skillz'
     });
   }
+  this.updateSkillz = function(val, type, id) {
+    return $http ({
+      method: 'PUT',
+      url: '/skillz/' + id + '/' + type,
+      data: { type: } //Here I am
+    });
+  }
 });

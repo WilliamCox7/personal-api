@@ -5,7 +5,22 @@
         <th>Skill</th>
         <th>Experience</th>
       </tr>
-      <tr ng-repeat="skill in skillz"><td>{{skill.name}}</td><td>{{skill.experience}}</td></tr>
+      <tr ng-repeat="skill in skillz">
+        <td>
+          <p ng-click="sknm = false" ng-show="sknm">{{skill.name}}</p>
+          <form ng-submit="updateSkillz(sknmVal, 'skill', $index)">
+            <input ng-hide="sknm" ng-model="sknmVal" type="text">
+            <input ng-hide="sknm" type="submit">
+          </form>
+        </td>
+        <td>
+          <p ng-click="skex = false" ng-show="skex">{{skill.experience}}</p>
+          <form ng-submit="updateSkillz(sknmVal, 'experience', $index)">
+            <input ng-hide="skex" type="text">
+            <input ng-hide="skex" type="submit">
+          </form>
+        </td>
+      </tr>
     </tbody>
   </table>
 </main>
