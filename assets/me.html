@@ -1,0 +1,31 @@
+<main>
+  <table>
+    <tbody>
+      <tr>
+        <th>Hobby</th>
+        <th>Type</th>
+      </tr>
+      <tr ng-repeat="hobby in hobbies"><td>{{hobby.name}}</td><td>{{hobby.type}}</td></tr>
+    </tbody>
+  </table>
+  <table>
+    <tbody>
+      <tr>
+        <th>Family Member</th>
+        <th>Relation</th>
+        <th>Gender</th>
+      </tr>
+      <tr ng-repeat="member in family"><td>{{member.name}}</td><td>{{member.relation}}</td><td>{{member.gender}}</td></tr>
+    </tbody>
+  </table>
+  <table>
+    <tbody>
+      <tr>
+        <th>Restaurant</th>
+        <th>Type</th>
+        <th>Rating</th>
+      </tr>
+      <tr ng-repeat="restaurant in restaurants"><td>{{restaurant.name}}</td><td>{{restaurant.type}}</td><td>{{restaurant.rating}}</td></tr>
+    </tbody>
+  </table>
+</main>

@@ -1,0 +1,21 @@
+<html ng-app="app">
+  <head>
+    <link rel="icon" href="">
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+    <div class="nav">
+      <h1 ui-sref="home">Home</h1>
+      <h1 ui-sref="me">Me</h1>
+      <h1 ui-sref="skillz">Skillz</h1>
+    </div>
+    <ui-view></ui-view>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
+    <script src="app.js"></script>
+    <script src="homeCtrl.js"></script>
+    <script src="meCtrl.js"></script>
+    <script src="skillzCtrl.js"></script>
+    <script src="homeSvc.js"></script>
+  </body>
+</html>

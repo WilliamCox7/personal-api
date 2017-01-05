@@ -1,0 +1,40 @@
+.nav {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: solid 1px black;
+  margin-bottom: 30px;
+}
+
+.nav h1:nth-child(2) {
+  border-left: solid 1px black;
+  border-right: solid 1px black;
+}
+
+.nav h1 {
+  padding: 0px 88px;
+}
+
+.nav h1:hover {
+  cursor: pointer;
+}
+
+main {
+
+}
+
+.home-page {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+td, th {
+  padding: 20px;
+  width: 200px;
+  border: solid 1px black;
+}
+
+table {
+  margin: auto;
+  padding: 30px;
+}
